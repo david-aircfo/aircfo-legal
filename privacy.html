@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — airCFO Airbyte Integration</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green: #1a6b4a;
+    --green-light: #e8f3ee;
+    --text: #1c1c1c;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --bg: #fafaf8;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 2rem 0;
+    background: #fff;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+  }
+
+  .logo-mark {
+    width: 32px;
+    height: 32px;
+    background: var(--green);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-mark svg { width: 18px; height: 18px; }
+
+  .logo-text {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem;
+    color: var(--text);
+  }
+
+  .hero {
+    padding: 3.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 3rem;
+  }
+
+  .badge {
+    display: inline-block;
+    background: var(--green-light);
+    color: var(--green);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.75rem;
+    border-radius: 100px;
+    margin-bottom: 1.25rem;
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  main { padding-bottom: 5rem; }
+
+  section { margin-bottom: 2.5rem; }
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--green);
+    margin-bottom: 0.75rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  section:first-child h2 { border-top: none; padding-top: 0; }
+
+  p { margin-bottom: 1rem; color: #374151; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 0.5rem 0 1rem 1.25rem;
+    color: #374151;
+  }
+
+  ul li { margin-bottom: 0.4rem; }
+
+  a { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a class="logo" href="#">
+      <div class="logo-mark">
+        <svg viewBox="0 0 18 18" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round">
+          <path d="M3 9h12M9 3v12M5 5l8 8M13 5l-8 8" opacity=".5"/>
+          <circle cx="9" cy="9" r="3" fill="#fff" stroke="none"/>
+        </svg>
+      </div>
+      <span class="logo-text">airCFO</span>
+    </a>
+  </div>
+</header>
+
+<div class="container">
+  <div class="hero">
+    <div class="badge">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">airCFO Airbyte Integration &nbsp;·&nbsp; Last updated: April 15, 2026</p>
+  </div>
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>This Privacy Policy describes how airCFO ("we," "us," or "our") handles data accessed through the airCFO Airbyte Integration application ("the App"). This App is a private, internal integration used solely by airCFO to synchronize QuickBooks Online financial data into airCFO's internal data infrastructure.</p>
+      <p>This App is not available to the public and is not listed on the Intuit App Store. It is operated exclusively for airCFO's internal business operations.</p>
+    </section>
+
+    <section>
+      <h2>Data We Access</h2>
+      <p>Through the QuickBooks Online API, the App accesses the following data from airCFO's own QuickBooks Online account:</p>
+      <ul>
+        <li>Invoice records and line item details</li>
+        <li>Customer names and contact information</li>
+        <li>Product and service item descriptions</li>
+        <li>Payment records and transaction history</li>
+      </ul>
+      <p>This data is accessed solely to support internal financial reporting and analysis at airCFO.</p>
+    </section>
+
+    <section>
+      <h2>How We Use the Data</h2>
+      <p>Data accessed through this App is used exclusively for:</p>
+      <ul>
+        <li>Internal business intelligence and financial reporting</li>
+        <li>Loading data into airCFO's private BigQuery data warehouse</li>
+        <li>Supporting airCFO's operational decision-making</li>
+      </ul>
+      <p>We do not use this data for advertising, marketing, or any purpose beyond internal operations.</p>
+    </section>
+
+    <section>
+      <h2>Data Sharing</h2>
+      <p>We do not sell, rent, or share data accessed through this App with any third parties. All data remains within airCFO's private internal infrastructure. Access is restricted to authorized airCFO personnel only.</p>
+    </section>
+
+    <section>
+      <h2>Data Storage & Security</h2>
+      <p>Data is stored in airCFO's Google Cloud BigQuery environment, which is protected by Google Cloud's enterprise security controls. Access to this data warehouse is governed by airCFO's internal access control policies.</p>
+      <p>OAuth credentials (Client ID, Client Secret, Access Token, and Refresh Token) are stored securely within airCFO's internal systems and are never shared externally.</p>
+    </section>
+
+    <section>
+      <h2>Data Retention</h2>
+      <p>Financial data synced through this App is retained in accordance with airCFO's internal data retention policies and applicable accounting record-keeping requirements. We retain data only as long as necessary for business and compliance purposes.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>For questions about this Privacy Policy or the App's data practices, contact us at:</p>
+      <p><a href="mailto:privacy@aircfo.com">privacy@aircfo.com</a><br>airCFO · United States</p>
+    </section>
+  </main>
+</div>
+
+<div class="container">
+  <footer>
+    <span>© 2026 airCFO. All rights reserved.</span>
+    <span>Internal use only — not a public application.</span>
+  </footer>
+</div>
+
+</body>
+</html>
